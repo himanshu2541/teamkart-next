@@ -1,0 +1,41 @@
+#team{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-inner-container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*margin: 3rem;*/
+    gap: 3rem;
+}
+.team-inner-container h1{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.team-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 810px){
+    .team-card-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-inner-container h1{
+        font-size: 2.5rem;
+    }
+}
