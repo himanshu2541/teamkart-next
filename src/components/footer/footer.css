@@ -50,6 +50,10 @@
     width: 100%;
 }
 
+#contacts .person-contact{
+    margin-bottom: 0.25rem;
+}
+
 #contacts .person-contact a{
     color: white;
     text-decoration: none;

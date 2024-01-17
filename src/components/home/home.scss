@@ -277,7 +277,8 @@ $sm-screen: 476px;
       justify-content: center;
       flex-direction: column;
 
-      h1 {
+      h2 {
+        font-size: calc(min(2.5rem, 6vw));
         margin-bottom: 2rem;
       }
 

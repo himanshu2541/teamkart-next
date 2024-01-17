@@ -8,9 +8,9 @@ const Contact = () => {
   return (
     <div id={'contact'}>
       <div className={'contact-container-inner'}>
-        <h1 className={'contact-title'}>
+        <h2 className={'contact-title'}>
           Stay Connected with Us
-        </h1>
+        </h2>
         <div className={'contact-form-container'}>
           <div className={'contact-form-inner-container'}>
             <ContactForm/>

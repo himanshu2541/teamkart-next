@@ -1,5 +1,5 @@
 import React from 'react'
-import {BackgroundReveal, Reveal} from "@/components/animations";
+import {Reveal} from "@/components/animations";
 import Link from "next/link";
 import AboutBackgroundImage from '@/assets/images/landing-page.jpeg'
 import K6Image from '@/assets/images/cars-image/k6r.jpg'
@@ -26,10 +26,10 @@ const Home = () => {
       </Reveal>
       <div className={'home-section-1'}>
         <div className={'home-main-text'}>
-          <div width={"100%"}>
+          <RevealWrapper>
             <h1>Fostering Engineering Excellence, Embracing the EV Frontier</h1>
-          </div>
-          <div>
+          </RevealWrapper>
+          <RevealWrapper>
             <p> Teamkart Motorsports, a nonprofit project, emphasizes collaborative skill development and
               practical
               engineering through Formula Student. Designing, manufacturing, testing, and competing in a
@@ -37,7 +37,7 @@ const Home = () => {
               this
               year showcases the team&apos;s commitment to sustainable technology.
             </p>
-          </div>
+          </RevealWrapper>
           <div className={"home-main-text-link"}>
             <Link href={'/'}>Read More</Link>
           </div>
@@ -94,7 +94,7 @@ const Home = () => {
       {/* New section 3*/}
       <div className={"home-section-3"}>
         <div className={'__inner-container'}>
-          <h1>Glimpse of Cars</h1>
+          <h2>Glimpse of Cars</h2>
           <div className={'car-detail-container'}>
             <div className={'car car-1'}>
               <div className={'car-img'}>

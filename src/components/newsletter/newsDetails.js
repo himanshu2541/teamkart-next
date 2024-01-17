@@ -4,7 +4,7 @@ export const newsDetails = [
         publicImg: '/images/newsletterImages/pitstop.jpg',
         imgWebp: '/images/newsletterImages/pitstop.webp',
         title: 'PITSTOP - SEPTEMBER Edition',
-        desc: 'Welcome to the latest edition of Pitstop, the newsDetails dedicated to keeping you up-to-date on the exciting world of TeamKART. From the latest innovations in vehicle design to the fiercest competition on the track, we\'ve got all the news, insights, and insider information you need to stay ahead of the curve. Buckle up and get ready for a thrilling ride!',
+        desc: 'Welcome to the latest edition of Pitstop, the newsDetails dedicated to keeping you up-to-date on the exciting world of TeamKART. From the latest innovations in vehicle design to the fiercest competition on the track, we\'ve got all the news, insights, and insider information you need to...',
         srcLink: 'https://drive.google.com/file/d/1vOQWp2e1hTM6i14uD6Y-0f2YJEgUjK42/view'
     },
     {

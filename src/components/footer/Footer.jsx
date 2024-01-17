@@ -2,20 +2,26 @@ import React from 'react'
 import './footer.css'
 import {IoIosMail} from "react-icons/io";
 import {FaLocationDot} from "react-icons/fa6";
-import {BackgroundReveal, Reveal} from "@/components/animations";
+import {Reveal} from "@/components/animations";
 import Link from "next/link";
+import RevealWrapper from "@/components/animations/RevealWrapper";
 const LazyMap = React.lazy(()=>import('./MapEmbed.jsx'))
 const Footer = () => {
     const teamLeaders = [{
         id: 1, name: "Manish S.", phone: "+91-9500018839"
     }, {
         id: 2, name: "Vedant Dave", phone: "+91-9619445999"
-    }]
+    },
+        {
+            id: 3, name: "Harsh Kumar", phone: "+91-8809303881"
+        }
+
+    ]
     return (<div id={'footer'}>
         <div className={'section-1'}>
             <Reveal className={'find-us-section'} width={"100%"} widthInner={"100%"}>
                 <div className={'map-responsive-container'}>
-                    <h1>Find Us</h1>
+                    <h2>Find Us</h2>
                     <div className={' map-responsive'}>
                         <React.Suspense fallback={'Loading...'}>
                             <LazyMap />
@@ -24,18 +30,18 @@ const Footer = () => {
                 </div>
             </Reveal>
             <div id={'contacts'} className={'contact-us-section'}>
-                <BackgroundReveal>
-                    <h1>Contacts</h1>
-                </BackgroundReveal>
+                <RevealWrapper>
+                    <h2>Contacts</h2>
+                </RevealWrapper>
                     <div className={'person-contact'}>
                         {teamLeaders.map(item => {
-                            return <BackgroundReveal key={`${item.id}`}>
+                            return <RevealWrapper key={`${item.id}`}>
                                 {item.name}<br/><a href={`tel:${item.name}`}>{item.phone}</a>
-                            </BackgroundReveal>
+                            </RevealWrapper>
                         })}
                     </div>
 
-                <BackgroundReveal>
+                <RevealWrapper>
                     <div className={'address'}>
                         <div>
                             <IoIosMail size={20}/>
@@ -50,7 +56,7 @@ const Footer = () => {
                         </span>
                         </div>
                     </div>
-                </BackgroundReveal>
+                </RevealWrapper>
 
             </div>
         </div>
