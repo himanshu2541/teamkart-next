@@ -19,7 +19,7 @@ import {
   Siyarams,
   SteelIndia,
   TataBattery,
-  Tekkr
+  Tekkr, UrbanSphere
 } from "@/components/logos/Logos.jsx";
 
 const Sponsors = () => {
@@ -42,9 +42,10 @@ const Sponsors = () => {
 
         <div className={'sponsors-section-2'}>
           <h2>Title sponsor</h2>
-          <div className={'title-sponsor-logos'}>
-            <Tekkr/>
-            <Arjun/>
+          <div className={'title-sponsor-logos title-sponsor'}>
+            {/*<Tekkr/>*/}
+            {/*<Arjun/>*/}
+            <UrbanSphere />
           </div>
         </div>
 

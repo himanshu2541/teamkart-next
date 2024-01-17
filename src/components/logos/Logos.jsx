@@ -17,6 +17,7 @@ import sandhu from '@/assets/images/logos/Sandhu x1 h18.png'
 import siyarams from '@/assets/images/logos/siyarams.png'
 import steel from '@/assets/images/logos/SteelIndia2.png'
 import tataBattery from '@/assets/images/logos/tata-green-battery-logo.png'
+import urbanSphere from '@/assets/images/logos/urban_sphere.png'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -147,4 +148,10 @@ export const TataBattery = () =>{
             <Link href={''}><Image src={tataBattery} alt={'image'}/></Link>
         </>
     )
+}
+
+export const UrbanSphere = () =>{
+  return(
+    <Link href={'https://urbansphere.in/'} target={'_blank'}><Image src={urbanSphere} alt={'image'}/></Link>
+  )
 }

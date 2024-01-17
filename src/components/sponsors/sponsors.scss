@@ -19,13 +19,16 @@
 }
 
 @mixin main-sponsor-logos-container{
-  img{
-    aspect-ratio: 3/2;
-    width: calc(max(100%, 200px));
-    height: auto;
-    //margin: 0.5rem;
-    background: white;
-    object-fit: contain;
+  a{
+    width: calc(min(100%, 400px));
+    img{
+      aspect-ratio: 3/2;
+      width: inherit;
+      height: auto;
+      //margin: 0.5rem;
+      background: white;
+      object-fit: contain;
+    }
   }
 }
 @mixin container-column($gap){
@@ -89,10 +92,14 @@
     }
 
     .title-sponsor-logos{
+      overflow: hidden;
       @include container-row(1rem);
       @include main-sponsor-logos-container;
       //display: flex;
       flex-wrap: wrap;
+      &.title-sponsor{
+        //max-width: calc(min(5rem, 100%));
+      }
     }
   }
 
@@ -105,6 +112,12 @@
     .technical-sponsors-logos{
       @include container-row(0);
       @include main-sponsor-logos-container;
+      a{
+        max-width: calc(min(200px, 80%));
+        img{
+          width: inherit;
+        }
+      }
       background: white;
       flex-direction: row;
       flex-wrap: wrap;

@@ -196,3 +196,31 @@ $sm-screen: 1060px;
     background: rgb(229, 229, 229);
   }
 }
+
+
+/*social media sidebar*/
+.social-media-sidebar{
+  position: fixed;
+  background: rgba(21, 21, 21, 0.27);
+  right: 0;
+  top: 80%;
+  transform: translateY(-50%);
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem 0.5rem;
+  z-index: 40;
+}
+
+.social-media-sidebar svg{
+  color: white;
+  cursor: pointer;
+  transition: all 200ms ease-out;
+}
+.social-media-sidebar svg:hover{
+  color: red;
+}
+

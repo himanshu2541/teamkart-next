@@ -11,6 +11,7 @@ import {IoIosArrowUp} from "react-icons/io";
 import AnimatedProgressBar from "@/components/animated_progress_bar/AnimatedProgressBar";
 import Logo from '@/assets/images/tk_logo_electric_white.png'
 import Image from "next/image";
+import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 const Navbar = () => {
 
   const [mobileNav, setMobileNav] = useState(false)
@@ -36,13 +37,13 @@ const Navbar = () => {
 
   useEffect(() => {
     return () => {
-      if (scrollY >= 0.15) {
+      if (window.scrollY>=100) {
         setNavProp(true)
       } else {
         setNavProp(false)
       }
     };
-  }, [scrollY]);
+  });
 
   const linkItems = {
     closed: {x: "100%", opacity: 0},
@@ -126,6 +127,12 @@ const Navbar = () => {
       >
         <IoIosArrowUp />
       </motion.div>
+
+      <div className={'social-media-sidebar'}>
+        <Link href={'https://www.facebook.com/TeamKART'} target={'_blank'}><FaFacebook size={30}/></Link>
+        <Link href={'https://www.instagram.com/team.kart/'} target={'_blank'}><FaInstagram size={30}/></Link>
+        <Link href={'https://www.linkedin.com/company/team-kart/'} target={'_blank'}><FaLinkedin size={30}/></Link>
+      </div>
 
     </>
   );
